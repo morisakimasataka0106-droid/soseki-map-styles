@@ -1,0 +1,39 @@
+{
+  "version": 8,
+  "sources": {
+    "gsiStd": {
+      "type": "raster",
+      "tiles": [
+        "https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png"
+      ],
+      "tileSize": 256,
+      "minzoom": 2,
+      "maxzoom": 18
+    },
+    "gsiHill": {
+      "type": "raster",
+      "tiles": [
+        "https://cyberjapandata.gsi.go.jp/xyz/hillshademap/{z}/{x}/{y}.png"
+      ],
+      "tileSize": 256,
+      "minzoom": 2,
+      "maxzoom": 16
+    }
+  },
+  "layers": [
+    {
+      "id": "gsiStdLayer",
+      "type": "raster",
+      "source": "gsiStd",
+      "paint": {}
+    },
+    {
+      "id": "gsiHillLayer",
+      "type": "raster",
+      "source": "gsiHill",
+      "paint": {
+        "raster-opacity": 0.45
+      }
+    }
+  ]
+}
