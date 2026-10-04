@@ -1,0 +1,22 @@
+{
+  "version": 8,
+  "sources": {
+    "gsiPhoto": {
+      "type": "raster",
+      "tiles": [
+        "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg"
+      ],
+      "tileSize": 256,
+      "minzoom": 2,
+      "maxzoom": 18
+    }
+  },
+  "layers": [
+    {
+      "id": "gsiPhotoLayer",
+      "type": "raster",
+      "source": "gsiPhoto",
+      "paint": {}
+    }
+  ]
+}
